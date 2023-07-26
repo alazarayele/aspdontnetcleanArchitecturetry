@@ -1,0 +1,12 @@
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Domain\bin\Debug\net7.0\cleanarchitecture.Domain.deps.json
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Domain\bin\Debug\net7.0\cleanarchitecture.Domain.dll
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Domain\bin\Debug\net7.0\cleanarchitecture.Domain.pdb
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Domain\obj\Debug\net7.0\cleanarchitecture.Domain.csproj.AssemblyReference.cache
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Domain\obj\Debug\net7.0\cleanarchitecture.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Domain\obj\Debug\net7.0\cleanarchitecture.Domain.AssemblyInfoInputs.cache
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Domain\obj\Debug\net7.0\cleanarchitecture.Domain.AssemblyInfo.cs
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Domain\obj\Debug\net7.0\cleanarchitecture.Domain.csproj.CoreCompileInputs.cache
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Domain\obj\Debug\net7.0\cleanarchitecture.Domain.dll
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Domain\obj\Debug\net7.0\refint\cleanarchitecture.Domain.dll
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Domain\obj\Debug\net7.0\cleanarchitecture.Domain.pdb
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Domain\obj\Debug\net7.0\ref\cleanarchitecture.Domain.dll

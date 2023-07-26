@@ -1,0 +1,15 @@
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Application\bin\Debug\net7.0\cleanarchitecture.Application.deps.json
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Application\bin\Debug\net7.0\cleanarchitecture.Application.dll
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Application\bin\Debug\net7.0\cleanarchitecture.Application.pdb
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Application\obj\Debug\net7.0\cleanarchitecture.Application.csproj.AssemblyReference.cache
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Application\obj\Debug\net7.0\cleanarchitecture.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Application\obj\Debug\net7.0\cleanarchitecture.Application.AssemblyInfoInputs.cache
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Application\obj\Debug\net7.0\cleanarchitecture.Application.AssemblyInfo.cs
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Application\obj\Debug\net7.0\cleanarchitecture.Application.csproj.CoreCompileInputs.cache
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Application\obj\Debug\net7.0\cleanarchitecture.Application.dll
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Application\obj\Debug\net7.0\refint\cleanarchitecture.Application.dll
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Application\obj\Debug\net7.0\cleanarchitecture.Application.pdb
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Application\obj\Debug\net7.0\ref\cleanarchitecture.Application.dll
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Application\bin\Debug\net7.0\cleanarchitecture.Domain.dll
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Application\bin\Debug\net7.0\cleanarchitecture.Domain.pdb
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Application\obj\Debug\net7.0\cleanarchitecture.Application.csproj.CopyComplete
