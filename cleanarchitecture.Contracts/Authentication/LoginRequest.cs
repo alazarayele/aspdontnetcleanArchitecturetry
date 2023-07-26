@@ -1,4 +1,4 @@
-namespace aspdotnetcleanarchitecturetry.Contracts.Authentication;
+namespace cleanarchitecture.Contracts.Authentication;
 
 public record LoginRequest(
     string Email,

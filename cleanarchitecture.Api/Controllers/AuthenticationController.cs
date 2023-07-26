@@ -1,7 +1,5 @@
-namespace aspdotnetcleanarchitecturetry.Api.Controllers;
-using Microsoft.AspNetCore.Mvc;
-using aspdotnetcleanarchitecturetry.Contracts.Authentication;
-using cleanarchitecture.Application.Services.AuthenticationService;
+namespace cleanarchitecture.Api.Controllers;
+
 
 [ApiController]
 [Route("auth")]
