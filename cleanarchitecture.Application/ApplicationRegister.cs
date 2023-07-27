@@ -1,13 +1,12 @@
+
 namespace cleanarchitecture.Application;
 
-public static class ApplicationRegistration
+public static class ApplicationRegister
 {
-    public static IServiceCollection AddApplicationRegistraion(this IServiceCollection iService)
+    public static IServiceCollection AddApplicationReg(this IServiceCollection iservice)
     {
-        iService.AddScoped<IAuthenticationService ,AuthenticationService>();
-      
-       
-
-        return iService;
+        
+        iservice.AddSingleton<IAuthenticationService, AuthenticationService>();
+        return iservice;   
     }
 }

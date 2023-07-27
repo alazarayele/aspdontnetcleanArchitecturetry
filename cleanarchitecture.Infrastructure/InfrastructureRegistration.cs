@@ -1,13 +1,14 @@
-using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Configuration;
 
-namespace cleanarchitecture.Application;
+namespace cleanarchitecture.Infrastructure;
 
-public static class InfrastructureRegistration
+public static class InfrastructureReg
 {
-    public static IServiceCollection AddInfrastructureRegistration(this IServiceCollection iService)
+    public static IServiceCollection AddInfrastructure(this IServiceCollection iservice,IConfiguration configuration)
     {
-       
-
-        return iService;
+        iservice.Configure<JwtSettings>(configuration.GetSection(JwtSettings.SectionName));
+        iservice.AddSingleton<IJwtTokenGenerator,JwtTokenGenerator>();
+        iservice.AddSingleton<IDateTimeProvider,DateTimeProvider>();
+        return iservice;   
     }
 }
