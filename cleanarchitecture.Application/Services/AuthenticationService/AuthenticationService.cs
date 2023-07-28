@@ -2,27 +2,50 @@ namespace cleanarchitecture.Application.Services.AuthenticationService;
 
 public class AuthenticationService : IAuthenticationService
 {
-    private readonly IJwtTokenGenerator _iJwtTokenGenerator;
-
     
-    public AuthenticationService(IJwtTokenGenerator ijwtTokenGenerator)
+    private readonly IJwtTokenGenerator _iJwtTokenGenerator;
+    private readonly IUserRepository _iUserRepository;
+    
+    public AuthenticationService(IJwtTokenGenerator ijwtTokenGenerator,IUserRepository iUserRepository)
     {
        _iJwtTokenGenerator= ijwtTokenGenerator;
+       _iUserRepository = iUserRepository;
     }
-   Guid userId = Guid.NewGuid();
+   
     public AuthenticationResult Register(string firstName, string lastName, string email, string password)
     {
-        
-        var token = _iJwtTokenGenerator.GenerateToken(userId,firstName,lastName);
-        return new AuthenticationResult(Guid.NewGuid(),firstName,lastName,email,token);
+       if (_iUserRepository.GetUserByEmail(email) is not null) 
+       {
+            throw new Exception("User with given email already exists");
+       }
+       var user =new User
+       {
+           FirstName = firstName,
+           LastName = lastName,
+           EMail = email,
+           Password = password
+       };
+
+       _iUserRepository.Add(user);
+       
+        var token = _iJwtTokenGenerator.GenerateToken(user.Id,firstName,lastName);
+        return new AuthenticationResult(user.Id,firstName,lastName,email,token);
     }
      public AuthenticationResult login(string email, string password)
     { 
-        var token = _iJwtTokenGenerator.GenerateToken(userId,email,password);
+        if(_iUserRepository.GetUserByEmail(email) is not User user)
+        {
+            throw new Exception("email does not exist");
+        }
+        if(user.Password != password)
+        {
+            throw new Exception("Invalid Password");
+        }
+        var token = _iJwtTokenGenerator.GenerateToken(user.Id,user.FirstName,user.LastName);
         return new AuthenticationResult(
-            userId,
-           "firstName",
-            "lastname",
+            user.Id,
+            user.FirstName,
+            user.LastName,
             email,
             token
             );

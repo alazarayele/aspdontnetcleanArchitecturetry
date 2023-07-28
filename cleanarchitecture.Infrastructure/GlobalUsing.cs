@@ -5,3 +5,4 @@ global using cleanarchitecture.Application.Common.Interfaces.Services;
 global using cleanarchitecture.Infrastructure.Authentication;
 global using cleanarchitecture.Infrastructure.Services;
 global using Microsoft.Extensions.DependencyInjection;
+global using cleanarchitecture.Application.Persistence;

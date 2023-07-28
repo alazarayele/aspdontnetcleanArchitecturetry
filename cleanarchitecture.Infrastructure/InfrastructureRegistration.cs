@@ -1,3 +1,4 @@
+using cleanarchitecture.Infrastructure.Persistence;
 using Microsoft.Extensions.Configuration;
 
 namespace cleanarchitecture.Infrastructure;
@@ -9,6 +10,7 @@ public static class InfrastructureReg
         iservice.Configure<JwtSettings>(configuration.GetSection(JwtSettings.SectionName));
         iservice.AddSingleton<IJwtTokenGenerator,JwtTokenGenerator>();
         iservice.AddSingleton<IDateTimeProvider,DateTimeProvider>();
+        iservice.AddSingleton<IUserRepository,UserRepository>();
         return iservice;   
     }
 }
