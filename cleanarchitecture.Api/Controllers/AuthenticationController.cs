@@ -24,10 +24,10 @@ public IActionResult Register(RegisterRequest request)
     
 
    var response = new AuthenticationResponse(
-    authResult.Id,
-    authResult.FirstName,
-    authResult.LirstName,
-    authResult.Email,
+    authResult.user.Id,
+    authResult.user.FirstName,
+    authResult.user.LastName,
+    authResult.user.EMail,
     authResult.Token 
    ) ;
 
@@ -47,10 +47,10 @@ public IActionResult Login(LoginRequest request)
     
 
    var response = new AuthenticationResponse(
-    authResult.Id,
-    authResult.FirstName,
-    authResult.LirstName,
-    authResult.Email,
+    authResult.user.Id,
+    authResult.user.FirstName,
+    authResult.user.LastName,
+    authResult.user.EMail,
     authResult.Token 
    ) ;
 

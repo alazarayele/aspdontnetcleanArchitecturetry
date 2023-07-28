@@ -6,3 +6,8 @@ global using cleanarchitecture.Infrastructure.Authentication;
 global using cleanarchitecture.Infrastructure.Services;
 global using Microsoft.Extensions.DependencyInjection;
 global using cleanarchitecture.Application.Persistence;
+
+global using System.Text;
+global using cleanarchitecture.Domain;
+global using Microsoft.Extensions.Options;
+global using Microsoft.IdentityModel.Tokens;
