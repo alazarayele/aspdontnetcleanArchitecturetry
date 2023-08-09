@@ -3,6 +3,7 @@ namespace cleanarchitecture.Api.Controllers;
 
 [ApiController]
 [Route("auth")]
+
 public class AuthenticationController : ControllerBase 
 {
 

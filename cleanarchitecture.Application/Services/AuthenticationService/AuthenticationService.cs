@@ -1,3 +1,5 @@
+using cleanarchitecture.Application.Common.Errors;
+
 namespace cleanarchitecture.Application.Services.AuthenticationService;
 
 public class AuthenticationService : IAuthenticationService
@@ -16,7 +18,7 @@ public class AuthenticationService : IAuthenticationService
     {
        if (_iUserRepository.GetUserByEmail(email) is not null) 
        {
-            throw new Exception("User with given email already exists");
+            throw new DeplicateEmailException();
        }
        var user =new User
        {
