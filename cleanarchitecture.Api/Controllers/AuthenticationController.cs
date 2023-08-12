@@ -1,10 +1,12 @@
+using ErrorOr;
+
 namespace cleanarchitecture.Api.Controllers;
 
 
-[ApiController]
+
 [Route("auth")]
 
-public class AuthenticationController : ControllerBase 
+public class AuthenticationController : ApiController 
 {
 
     private readonly IAuthenticationService _iAuthenticationService;
@@ -17,22 +19,32 @@ public AuthenticationController(IAuthenticationService iAuthenticationService)
 
 public IActionResult Register(RegisterRequest request)
 { 
-    var authResult = _iAuthenticationService.Register(
+    ErrorOr<AuthenticationResult>authResult = _iAuthenticationService.Register(
     request.FirstName,
     request.LastName,
     request.Email,
     request.Password);
     
+    return authResult.Match(
+        authResult => Ok(MapAuthResult(authResult)),
+        errors =>Problem(errors)
+        
+    );
+ 
 
-   var response = new AuthenticationResponse(
+ 
+}
+
+private static AuthenticationResponse MapAuthResult(AuthenticationResult authResult)
+{
+    return new AuthenticationResponse(
     authResult.user.Id,
     authResult.user.FirstName,
     authResult.user.LastName,
     authResult.user.EMail,
     authResult.Token 
+   
    ) ;
-
-   return Ok(response);
 }
 
 

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Zav2rMnFHClOo3Pfc19HEfZwFd27dmakGRKDclHDZKcOV7hWq8K9cMv1pyCUoLTMt8pCFr8R2dBT1p9imUANIA==",
+  "dgSpecHash": "pLGNMgVD5IktuKkbdPrEKG5ntiEumvBS6v0iOBXAFLZDLuXvrTqSzEgwYOYDQYx0vmoHOesId/gCD7gFBn+BgA==",
   "success": true,
   "projectFilePath": "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry\\cleanarchitecture.Infrastructure\\cleanarchitecture.Infrastructure.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\A\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512",
     "C:\\Users\\A\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\A\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\A\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

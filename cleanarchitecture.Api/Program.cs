@@ -1,6 +1,7 @@
 
 using cleanarchitecture.Api;
-using cleanarchitecture.Api.Errors;
+using cleanarchitecture.Api.Common.Errors;
+
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "iUhsuuz+vB1xeuzbYq5myYx9QTtvkSbEmR4UC5HIoEx6bGR2NvjaD33DeQyd5caOpfDx07Npe9PnntwcmDeNYA==",
+  "dgSpecHash": "Qff64JjJMYu8xiG/Zr0Gg2sat79y0Z2hzcNIZnk8z5A0Pq1yPt6IzgU5pO55dSX8POkgrcI8o2UHXRNrJJew6A==",
   "success": true,
   "projectFilePath": "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry\\cleanarchitecture.Api\\cleanarchitecture.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\A\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512",
     "C:\\Users\\A\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\A\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.4\\microsoft.aspnetcore.openapi.7.0.4.nupkg.sha512",
     "C:\\Users\\A\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

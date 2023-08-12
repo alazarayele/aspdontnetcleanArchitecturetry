@@ -1,4 +1,6 @@
 using cleanarchitecture.Application.Common.Errors;
+using cleanarchitecture.Domain.Common.Errors;
+using ErrorOr;
 
 namespace cleanarchitecture.Application.Services.AuthenticationService;
 
@@ -14,11 +16,11 @@ public class AuthenticationService : IAuthenticationService
        _iUserRepository = iUserRepository;
     }
    
-    public AuthenticationResult Register(string firstName, string lastName, string email, string password)
+    public ErrorOr<AuthenticationResult> Register(string firstName, string lastName, string email, string password)
     {
        if (_iUserRepository.GetUserByEmail(email) is not null) 
        {
-            throw new DeplicateEmailException();
+            return Errors.User.DuplicateEmail;
        }
        var user =new User
        {

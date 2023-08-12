@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "f+qK7k6PjHZ7LXjBZ0ig984+zPms/34Dgy+Lf06X6qtYNPgSx3+7ore979HNlZweAwPwiGjocnDcYjhTUFyRng==",
+  "dgSpecHash": "Gcg0KmyXMO7H+10y2dIfJuDigt6MkzsA8j5Do9/0jfy9ZLaBT4I7HoyImvSGIxNZwM6RMRKl9qN5hYLekShsDQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry\\cleanarchitecture.Application\\cleanarchitecture.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\A\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512",
     "C:\\Users\\A\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
     "C:\\Users\\A\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
   ],
