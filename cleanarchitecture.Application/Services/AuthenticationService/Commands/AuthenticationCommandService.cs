@@ -1,16 +1,17 @@
 using cleanarchitecture.Application.Common.Errors;
+using cleanarchitecture.Application.Services.AuthenticationService.Common;
 using cleanarchitecture.Domain.Common.Errors;
 using ErrorOr;
 
-namespace cleanarchitecture.Application.Services.AuthenticationService;
+namespace cleanarchitecture.Application.Services.AuthenticationService.Commands;
 
-public class AuthenticationService : IAuthenticationService
+public class AuthenticationCommandService : IAuthenticationCommandService
 {
     
     private readonly IJwtTokenGenerator _iJwtTokenGenerator;
     private readonly IUserRepository _iUserRepository;
     
-    public AuthenticationService(IJwtTokenGenerator ijwtTokenGenerator,IUserRepository iUserRepository)
+    public AuthenticationCommandService(IJwtTokenGenerator ijwtTokenGenerator,IUserRepository iUserRepository)
     {
        _iJwtTokenGenerator= ijwtTokenGenerator;
        _iUserRepository = iUserRepository;
@@ -35,21 +36,5 @@ public class AuthenticationService : IAuthenticationService
         var token = _iJwtTokenGenerator.GenerateToken(user);
         return new AuthenticationResult(user,token);
     }
-     public AuthenticationResult login(string email, string password)
-    { 
-        if(_iUserRepository.GetUserByEmail(email) is not User user)
-        {
-            throw new Exception("email does not exist");
-        }
-        if(user.Password != password)
-        {
-            throw new Exception("Invalid Password");
-        }
-        var token = _iJwtTokenGenerator.GenerateToken(user);
-        return new AuthenticationResult(
-           user,
-            token
-            );
-    }
-
+     
 }

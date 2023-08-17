@@ -1,4 +1,8 @@
+using cleanarchitecture.Application.Services.AuthenticationService;
+using cleanarchitecture.Application.Services.AuthenticationService.Common;
+using cleanarchitecture.Application.Services.AuthenticationService.Queries;
 using ErrorOr;
+using MediatR;
 
 namespace cleanarchitecture.Api.Controllers;
 
@@ -8,18 +12,21 @@ namespace cleanarchitecture.Api.Controllers;
 
 public class AuthenticationController : ApiController 
 {
-
-    private readonly IAuthenticationService _iAuthenticationService;
-public AuthenticationController(IAuthenticationService iAuthenticationService)
+    private readonly IMediator _mediator;
+    private readonly IAuthenticationCommandService _iAuthenticationCommandService;
+     private readonly IAuthenticationQueryService _iAuthenticationQueryService;
+public AuthenticationController(IAuthenticationCommandService iAuthenticationCommandService,
+IAuthenticationQueryService iAuthenticationQueryService)
 {
-    _iAuthenticationService=iAuthenticationService;
+    _iAuthenticationCommandService=iAuthenticationCommandService;
+    _iAuthenticationQueryService=iAuthenticationQueryService;
 }
 
 [HttpPost("register")]
 
 public IActionResult Register(RegisterRequest request)
 { 
-    ErrorOr<AuthenticationResult>authResult = _iAuthenticationService.Register(
+    ErrorOr<AuthenticationResult>authResult = _iAuthenticationCommandService.Register(
     request.FirstName,
     request.LastName,
     request.Email,
@@ -53,7 +60,7 @@ private static AuthenticationResponse MapAuthResult(AuthenticationResult authRes
 public IActionResult Login(LoginRequest request)
 {
     
-    var authResult = _iAuthenticationService.login(
+    var authResult = _iAuthenticationQueryService.login(
 
     request.Email,
     request.Password);
