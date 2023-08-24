@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "pLGNMgVD5IktuKkbdPrEKG5ntiEumvBS6v0iOBXAFLZDLuXvrTqSzEgwYOYDQYx0vmoHOesId/gCD7gFBn+BgA==",
+  "dgSpecHash": "RvXGSKMBU+h2H8jVdrQV2n8DXuiiScHWu2CR3TDmVSfKWc8Lqr94GA1cugTwoW3VX0u7rjVlwsBaHUAVYw7DFw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry\\cleanarchitecture.Infrastructure\\cleanarchitecture.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry - (before Mediator Begin)\\cleanarchitecture.Infrastructure\\cleanarchitecture.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\A\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512",
+    "C:\\Users\\A\\.nuget\\packages\\mediatr\\12.1.1\\mediatr.12.1.1.nupkg.sha512",
+    "C:\\Users\\A\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\A\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\A\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\A\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

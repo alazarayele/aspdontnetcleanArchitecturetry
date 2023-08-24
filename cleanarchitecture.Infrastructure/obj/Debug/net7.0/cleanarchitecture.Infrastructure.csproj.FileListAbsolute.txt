@@ -15,3 +15,20 @@ C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Infrastruc
 C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Infrastructure\bin\Debug\net7.0\cleanarchitecture.Application.pdb
 C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Infrastructure\bin\Debug\net7.0\cleanarchitecture.Domain.pdb
 C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Infrastructure\obj\Debug\net7.0\cleanarchitecture.Infrastructure.csproj.CopyComplete
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry - (before Mediator Begin)\cleanarchitecture.Infrastructure\bin\Debug\net7.0\cleanarchitecture.Infrastructure.deps.json
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry - (before Mediator Begin)\cleanarchitecture.Infrastructure\bin\Debug\net7.0\cleanarchitecture.Infrastructure.dll
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry - (before Mediator Begin)\cleanarchitecture.Infrastructure\bin\Debug\net7.0\cleanarchitecture.Infrastructure.pdb
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry - (before Mediator Begin)\cleanarchitecture.Infrastructure\bin\Debug\net7.0\cleanarchitecture.Application.dll
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry - (before Mediator Begin)\cleanarchitecture.Infrastructure\bin\Debug\net7.0\cleanarchitecture.Domain.dll
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry - (before Mediator Begin)\cleanarchitecture.Infrastructure\bin\Debug\net7.0\cleanarchitecture.Application.pdb
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry - (before Mediator Begin)\cleanarchitecture.Infrastructure\bin\Debug\net7.0\cleanarchitecture.Domain.pdb
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry - (before Mediator Begin)\cleanarchitecture.Infrastructure\obj\Debug\net7.0\cleanarchitecture.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry - (before Mediator Begin)\cleanarchitecture.Infrastructure\obj\Debug\net7.0\cleanarchitecture.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry - (before Mediator Begin)\cleanarchitecture.Infrastructure\obj\Debug\net7.0\cleanarchitecture.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry - (before Mediator Begin)\cleanarchitecture.Infrastructure\obj\Debug\net7.0\cleanarchitecture.Infrastructure.AssemblyInfo.cs
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry - (before Mediator Begin)\cleanarchitecture.Infrastructure\obj\Debug\net7.0\cleanarchitecture.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry - (before Mediator Begin)\cleanarchitecture.Infrastructure\obj\Debug\net7.0\cleanarchitecture.Infrastructure.csproj.CopyComplete
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry - (before Mediator Begin)\cleanarchitecture.Infrastructure\obj\Debug\net7.0\cleanarchitecture.Infrastructure.dll
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry - (before Mediator Begin)\cleanarchitecture.Infrastructure\obj\Debug\net7.0\refint\cleanarchitecture.Infrastructure.dll
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry - (before Mediator Begin)\cleanarchitecture.Infrastructure\obj\Debug\net7.0\cleanarchitecture.Infrastructure.pdb
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry - (before Mediator Begin)\cleanarchitecture.Infrastructure\obj\Debug\net7.0\ref\cleanarchitecture.Infrastructure.dll

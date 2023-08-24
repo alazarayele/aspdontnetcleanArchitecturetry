@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ev8i5469A1LoIkVrzzZdc3n3zljQ2DJtrYD3o5olYf7AdP4vWf+PqyB1Pg72fZuiJN+Bn0G+G9nhnZSB8OXVDg==",
+  "dgSpecHash": "q4OJbzvRZMql2Zo0Jxp+nLQxRUvq+64qt6Y8Ha6LF3OOnqrfghI68/KvnNqAIuHpjhIqGN8FLyzN0TpyqFUw2g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry\\cleanarchitecture.Application\\cleanarchitecture.Application.csproj",
+  "projectFilePath": "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry - (before Mediator Begin)\\cleanarchitecture.Application\\cleanarchitecture.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\A\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512",
     "C:\\Users\\A\\.nuget\\packages\\mediatr\\12.1.1\\mediatr.12.1.1.nupkg.sha512",
