@@ -1,7 +1,10 @@
+using cleanarchitecture.Application.Authentication.Commands.Register;
+using cleanarchitecture.Application.Authentication.Queries.Login;
 using cleanarchitecture.Application.Services.AuthenticationService;
 using cleanarchitecture.Application.Services.AuthenticationService.Common;
-using cleanarchitecture.Application.Services.AuthenticationService.Queries;
+
 using ErrorOr;
+using MapsterMapper;
 using MediatR;
 
 namespace cleanarchitecture.Api.Controllers;
@@ -12,25 +15,24 @@ namespace cleanarchitecture.Api.Controllers;
 
 public class AuthenticationController : ApiController 
 {
-    private readonly IMediator _mediator;
-    private readonly IAuthenticationCommandService _iAuthenticationCommandService;
-     private readonly IAuthenticationQueryService _iAuthenticationQueryService;
-public AuthenticationController(IAuthenticationCommandService iAuthenticationCommandService,
-IAuthenticationQueryService iAuthenticationQueryService)
-{
-    _iAuthenticationCommandService=iAuthenticationCommandService;
-    _iAuthenticationQueryService=iAuthenticationQueryService;
-}
+    private readonly ISender _mediator;
 
+    private readonly IMapper _mapper;
+   
+ 
+public AuthenticationController(ISender mediator,IMapper mapper)
+{
+    _mediator = mediator;
+    _mapper = mapper;
+}
 [HttpPost("register")]
 
-public IActionResult Register(RegisterRequest request)
+public async Task<IActionResult> Register(RegisterRequest request)
 { 
-    ErrorOr<AuthenticationResult>authResult = _iAuthenticationCommandService.Register(
-    request.FirstName,
-    request.LastName,
+    var command = new RegisterCommand(request.FirstName, request.LastName,
     request.Email,
     request.Password);
+    ErrorOr<AuthenticationResult>authResult = await _mediator.Send(command);
     
     return authResult.Match(
         authResult => Ok(MapAuthResult(authResult)),
@@ -57,25 +59,43 @@ private static AuthenticationResponse MapAuthResult(AuthenticationResult authRes
 
 [HttpPost("login")]
 
-public IActionResult Login(LoginRequest request)
-{
-    
-    var authResult = _iAuthenticationQueryService.login(
 
+
+public async Task<IActionResult> Login(LoginRequest request)
+{ 
+    var query = new LoginQuery(
     request.Email,
     request.Password);
+    ErrorOr<AuthenticationResult>authResult = await _mediator.Send(query);
+    return authResult.Match(
+        authResult => Ok(MapAuthResultLogin(authResult)),
+        errors =>Problem(errors)  
+    ); 
+}
+
+// public async Task<IActionResult> Login(LoginRequest request)
+// {
+//     var query = new LoginQuery(request.Email,request.Password);
+//     var authResult =await _mediator.Send(query);
     
 
-   var response = new AuthenticationResponse(
+//    //var response = new AuthenticationResponse(authResult.User);
+
+//    return Ok("FailedLogin");
+// }
+private static AuthenticationResponse MapAuthResultLogin(AuthenticationResult authResult)
+{
+    return new AuthenticationResponse(
     authResult.user.Id,
     authResult.user.FirstName,
     authResult.user.LastName,
     authResult.user.EMail,
     authResult.Token 
+   
    ) ;
-
-   return Ok(response);
 }
+
+
 
 }
   
