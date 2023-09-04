@@ -1,13 +1,20 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "CZZVWCj1lJ6kxOdj0OUtPYuOtLsc4sUtlMXunFF7dRq+iW5Z0b51O3tEAsb1+1RZROFFYfjNIQlD90c54RpdZA==",
+=======
+  "dgSpecHash": "RvXGSKMBU+h2H8jVdrQV2n8DXuiiScHWu2CR3TDmVSfKWc8Lqr94GA1cugTwoW3VX0u7rjVlwsBaHUAVYw7DFw==",
+>>>>>>> 7c0232fec7df83f1d66ae608cdb3d127e21b5f82
   "success": true,
-  "projectFilePath": "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry\\cleanarchitecture.Infrastructure\\cleanarchitecture.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry - (before Mediator Begin)\\cleanarchitecture.Infrastructure\\cleanarchitecture.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\A\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512",
     "C:\\Users\\A\\.nuget\\packages\\mediatr\\12.1.1\\mediatr.12.1.1.nupkg.sha512",
     "C:\\Users\\A\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+<<<<<<< HEAD
     "C:\\Users\\A\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
+=======
+>>>>>>> 7c0232fec7df83f1d66ae608cdb3d127e21b5f82
     "C:\\Users\\A\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\A\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\A\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

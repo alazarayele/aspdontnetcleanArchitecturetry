@@ -10,7 +10,11 @@
         "dependencies": {
           "ErrorOr": "1.2.1",
           "MediatR": "12.1.1",
+<<<<<<< HEAD
           "MediatR.Extensions.Microsoft.DependencyInjection": "11.1.0",
+=======
+          "Microsoft.Extensions.DependencyInjection": "7.0.0",
+>>>>>>> 7c0232fec7df83f1d66ae608cdb3d127e21b5f82
           "cleanarchitecture.Domain": "1.0.0"
         },
         "runtime": {
@@ -26,6 +30,29 @@
         }
       },
       "MediatR/12.1.1": {
+<<<<<<< HEAD
+=======
+        "dependencies": {
+          "MediatR.Contracts": "2.0.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/MediatR.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.1.1.0"
+          }
+        }
+      },
+      "MediatR.Contracts/2.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/MediatR.Contracts.dll": {
+            "assemblyVersion": "2.0.1.0",
+            "fileVersion": "2.0.1.0"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/7.0.0": {
+>>>>>>> 7c0232fec7df83f1d66ae608cdb3d127e21b5f82
         "dependencies": {
           "MediatR.Contracts": "2.0.1",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
@@ -89,6 +116,23 @@
       "hashPath": "erroror.1.2.1.nupkg.sha512"
     },
     "MediatR/12.1.1": {
+<<<<<<< HEAD
+=======
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1AbwzzeS6gn4NdcO6A9LfKS5TXXgAiUQM3J18dREHa7O7TrdCXJ5dNFeRBpzPZY7UWl5Kby+n9pWrPJe3SDiMA==",
+      "path": "mediatr/12.1.1",
+      "hashPath": "mediatr.12.1.1.nupkg.sha512"
+    },
+    "MediatR.Contracts/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FYv95bNT4UwcNA+G/J1oX5OpRiSUxteXaUt2BJbRSdRNiIUNbggJF69wy6mnk2wYToaanpdXZdCwVylt96MpwQ==",
+      "path": "mediatr.contracts/2.0.1",
+      "hashPath": "mediatr.contracts.2.0.1.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection/7.0.0": {
+>>>>>>> 7c0232fec7df83f1d66ae608cdb3d127e21b5f82
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-1AbwzzeS6gn4NdcO6A9LfKS5TXXgAiUQM3J18dREHa7O7TrdCXJ5dNFeRBpzPZY7UWl5Kby+n9pWrPJe3SDiMA==",

@@ -8,4 +8,8 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = cleanarchitecture.Domain
+<<<<<<< HEAD
 build_property.ProjectDir = c:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Domain\
+=======
+build_property.ProjectDir = c:\Users\A\Documents\aspdontnetcleanArchitecturetry - (before Mediator Begin)\cleanarchitecture.Domain\
+>>>>>>> 7c0232fec7df83f1d66ae608cdb3d127e21b5f82

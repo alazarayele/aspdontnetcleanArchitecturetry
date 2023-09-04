@@ -198,11 +198,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry\\cleanarchitecture.Application\\cleanarchitecture.Application.csproj",
+      "projectUniqueName": "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry - (before Mediator Begin)\\cleanarchitecture.Application\\cleanarchitecture.Application.csproj",
       "projectName": "cleanarchitecture.Application",
-      "projectPath": "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry\\cleanarchitecture.Application\\cleanarchitecture.Application.csproj",
+      "projectPath": "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry - (before Mediator Begin)\\cleanarchitecture.Application\\cleanarchitecture.Application.csproj",
       "packagesPath": "C:\\Users\\A\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry\\cleanarchitecture.Application\\obj\\",
+      "outputPath": "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry - (before Mediator Begin)\\cleanarchitecture.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\A\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -219,8 +219,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry\\cleanarchitecture.Domain\\cleanarchitecture.Domain.csproj": {
-              "projectPath": "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry\\cleanarchitecture.Domain\\cleanarchitecture.Domain.csproj"
+            "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry - (before Mediator Begin)\\cleanarchitecture.Domain\\cleanarchitecture.Domain.csproj": {
+              "projectPath": "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry - (before Mediator Begin)\\cleanarchitecture.Domain\\cleanarchitecture.Domain.csproj"
             }
           }
         }
