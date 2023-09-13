@@ -1,12 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "kBjIuISdUl3VDQxjqvAjs4dhsUHucFRnOYrwt3O1jNIhZQ/4UzOCxsWuf0XpXIf/iITqf+yqm/+yLOGfwEcyKw==",
-=======
-  "dgSpecHash": "q4OJbzvRZMql2Zo0Jxp+nLQxRUvq+64qt6Y8Ha6LF3OOnqrfghI68/KvnNqAIuHpjhIqGN8FLyzN0TpyqFUw2g==",
->>>>>>> 7c0232fec7df83f1d66ae608cdb3d127e21b5f82
   "success": true,
-  "projectFilePath": "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry - (before Mediator Begin)\\cleanarchitecture.Application\\cleanarchitecture.Application.csproj",
+  "projectFilePath": "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry\\cleanarchitecture.Application\\cleanarchitecture.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\A\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512",
     "C:\\Users\\A\\.nuget\\packages\\mediatr\\12.1.1\\mediatr.12.1.1.nupkg.sha512",
@@ -15,6 +11,12 @@
     "C:\\Users\\A\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry\\cleanarchitecture.Application\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    },
     {
       "code": "NU1608",
       "level": "Warning",

@@ -116,3 +116,6 @@ C:\Users\A\Documents\aspdontnetcleanArchitecturetry - (before Mediator Begin)\cl
 C:\Users\A\Documents\aspdontnetcleanArchitecturetry - (before Mediator Begin)\cleanarchitecture.Api\obj\Debug\net7.0\cleanarchitecture.Api.genruntimeconfig.cache
 C:\Users\A\Documents\aspdontnetcleanArchitecturetry - (before Mediator Begin)\cleanarchitecture.Api\obj\Debug\net7.0\ref\cleanarchitecture.Api.dll
 >>>>>>> 7c0232fec7df83f1d66ae608cdb3d127e21b5f82
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Api\bin\Debug\net7.0\Mapster.dll
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Api\bin\Debug\net7.0\Mapster.Core.dll
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Api\bin\Debug\net7.0\Mapster.DependencyInjection.dll

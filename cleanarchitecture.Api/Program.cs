@@ -15,6 +15,7 @@ builder.Services.AddControllers();
 builder.Services.AddSingleton<ProblemDetailsFactory, cleanarchitectureProblemDetailsFactory>();
 //builder.Services.AddApplicationRegistraion();
 builder.Services.AddApplicationReg();
+builder.Services.AddPresentation();
 builder.Services.AddInfrastructure(builder.Configuration);  
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

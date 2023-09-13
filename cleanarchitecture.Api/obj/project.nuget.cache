@@ -1,12 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "iq2lhA53w+thdX63Osago6zsCfSp2CsanOGHGnjX7aVbJoJ26JnhgH8cGZgx0je/30mla/9mJfrjdDo5ZfY/tQ==",
-=======
-  "dgSpecHash": "pkayIzp8WE0jeyntLA6lhRYFk1JHczxkN27VEl0IcD5Z/hA0YwkK4YoDETCQsIc9B+afIM3FEOrsuGezFfXf8Q==",
->>>>>>> 7c0232fec7df83f1d66ae608cdb3d127e21b5f82
   "success": true,
-  "projectFilePath": "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry - (before Mediator Begin)\\cleanarchitecture.Api\\cleanarchitecture.Api.csproj",
+  "projectFilePath": "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry\\cleanarchitecture.Api\\cleanarchitecture.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\A\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512",
     "C:\\Users\\A\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
@@ -64,6 +60,12 @@
     "C:\\Users\\A\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry\\cleanarchitecture.Api\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    },
     {
       "code": "NU1608",
       "level": "Warning",
