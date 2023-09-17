@@ -119,3 +119,6 @@ C:\Users\A\Documents\aspdontnetcleanArchitecturetry - (before Mediator Begin)\cl
 C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Api\bin\Debug\net7.0\Mapster.dll
 C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Api\bin\Debug\net7.0\Mapster.Core.dll
 C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Api\bin\Debug\net7.0\Mapster.DependencyInjection.dll
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Api\bin\Debug\net7.0\FluentValidation.dll
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Api\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Api\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
