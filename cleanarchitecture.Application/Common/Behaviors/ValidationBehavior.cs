@@ -10,19 +10,27 @@ using FluentValidation.Results;
 using MediatR;
 using Microsoft.JSInterop.Infrastructure;
 
-public class ValidateRegisterCommandBehavior : IPipelineBehavior<RegisterCommand, ErrorOr<AuthenticationResult>>
+public class ValidateRegisterCommandBehavior<TRequest, TResponse> :
+ IPipelineBehavior<TRequest, TResponse>
+where TRequest : IRequest<TResponse>
+where TResponse : IErrorOr
 {
-    private readonly IValidator<RegisterCommand> _validator;
+    private readonly IValidator<TRequest>? _validator;
 
-    public ValidateRegisterCommandBehavior(IValidator<RegisterCommand> validator)
+    public ValidateRegisterCommandBehavior(IValidator<TRequest>? validator)
     {
         _validator=validator;
     }
-    public async Task<ErrorOr<AuthenticationResult>> Handle(
-        RegisterCommand request,
-         RequestHandlerDelegate<ErrorOr<AuthenticationResult>> next, 
+    public async Task<TResponse> Handle(
+        TRequest request,
+         RequestHandlerDelegate<TResponse> next, 
          CancellationToken cancellationToken)
     {
+
+        if (_validator is null)
+        {
+            return await next();
+        }
         //before the handler
         var validationResult = await _validator.ValidateAsync(request, cancellationToken);
 
@@ -36,6 +44,6 @@ public class ValidateRegisterCommandBehavior : IPipelineBehavior<RegisterCommand
         var errors = validationResult.Errors
         .ConvertAll(ValidationFailure => Error.Validation(ValidationFailure.PropertyName, ValidationFailure.ErrorMessage))
         ;
-        return errors;
+        return (dynamic)errors;
     }
 }

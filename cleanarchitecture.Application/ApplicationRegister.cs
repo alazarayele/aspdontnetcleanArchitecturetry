@@ -17,9 +17,10 @@ public static class ApplicationRegister
         
         //iservice.AddMediatR(typeof(ApplicationRegister).Assembly);
     iservice.AddMediatR(cfg=>cfg.RegisterServicesFromAssemblies(typeof(ApplicationRegister).GetTypeInfo().Assembly));
-    iservice.AddScoped<IPipelineBehavior<RegisterCommand, ErrorOr<AuthenticationResult>>,
-    ValidateRegisterCommandBehavior>();
-       // iservice.AddScoped<IValidator<RegisterCommand>,RegisterCommandValidator>();
+   iservice.AddScoped(
+    typeof(IPipelineBehavior<,>),
+    typeof(ValidateRegisterCommandBehavior<,>)
+   ); // iservice.AddScoped<IValidator<RegisterCommand>,RegisterCommandValidator>();
     iservice.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
     return iservice;   
     }

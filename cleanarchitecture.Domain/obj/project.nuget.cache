@@ -1,17 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "O4N6u/lP3QXNlOK5NER3smQBaM81O9hucUpljbCC/bA6QLPYjhrGCxgkt9VWpHo7jrYBpgZAo7n4HmTp4oF0Yw==",
+  "dgSpecHash": "vbsNg5YWBF3ARNK7SmjkkMb21LsQCwxyzqMFb/b/bR1jzwpJN7eYASjQC/JyLM03GPKWPdCeaOsZPD7tEw0m2A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry\\cleanarchitecture.Domain\\cleanarchitecture.Domain.csproj",
+  "projectFilePath": "c:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry\\cleanarchitecture.Domain\\cleanarchitecture.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\A\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry\\cleanarchitecture.Domain\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
