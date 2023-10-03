@@ -19,21 +19,25 @@ public static class InfrastructureReg
         ConfigurationManager configuration
     )
     {
-        iservice.Configure<JwtSettings>(configuration.GetSection(JwtSettings.SectionName));
+        var JwtSettings = new JwtSettings();
+        configuration.Bind(JwtSettings.SectionName,JwtSettings);
+        iservice.AddSingleton(Options.Create(JwtSettings));
         iservice.AddSingleton<IJwtTokenGenerator,JwtTokenGenerator>();
        
         iservice.AddAuthentication(defaultScheme: JwtBearerDefaults.AuthenticationScheme).
-        AddJwtBearer(//Options => Options.TokenValidationParameters = new TokenValidationParameters
-                      // //{
-                      //     ValidateIssuer = true,
-                      //     ValidateAudience = true,
-                      //     ValidateLifetime = true,
-                      //     ValidateIssuerSigningKey = true,
-                      //     ValidIssuer = configuration[JwtSettings.Issuer],
-                      //     ValidAudience = configuration[JwtSettings.Audience],
-                      //     IssuerSigningKey = new SymmetricSecurityKey(
-                      //         Encoding.UTF8.GetBytes(configuration[JwtSettings.key]))
-                      // }
-       );   
+        AddJwtBearer(Options => Options.TokenValidationParameters = new TokenValidationParameters
+                      {
+                           ValidateIssuer = true,
+                           ValidateAudience = true,
+                           ValidateLifetime = true,
+                           ValidateIssuerSigningKey = true,
+                           ValidIssuer = JwtSettings.Issuer,
+                           ValidAudience = JwtSettings.Audience,
+                           IssuerSigningKey = new SymmetricSecurityKey(
+                              Encoding.UTF8.GetBytes(JwtSettings.Secret))
+                       }
+       );  
+
+       return iservice; 
     }
 }

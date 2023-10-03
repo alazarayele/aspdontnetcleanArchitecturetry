@@ -122,3 +122,7 @@ C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Api\bin\De
 C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Api\bin\Debug\net7.0\FluentValidation.dll
 C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Api\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
 C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Api\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\A\Documents\aspdontnetcleanArchitecturetry\cleanarchitecture.Api\bin\Debug\net7.0\Newtonsoft.Json.dll

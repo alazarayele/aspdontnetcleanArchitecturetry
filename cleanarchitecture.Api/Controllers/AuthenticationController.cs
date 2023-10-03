@@ -6,12 +6,14 @@ using cleanarchitecture.Application.Services.AuthenticationService.Common;
 using ErrorOr;
 using MapsterMapper;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 
 namespace cleanarchitecture.Api.Controllers;
 
 
 
 [Route("auth")]
+[AllowAnonymous]
 
 public class AuthenticationController : ApiController
 {

@@ -1,4 +1,10 @@
-GET http://localhost:5297/dinners
-Content-Type: application/json
 
+
+
+
+
+GET  http://localhost:5297/Dinners  HTTP/1.1
+
+
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiZTJjYzhlYy1hMWM3LTQzNjUtYjVlYy02ZjZiZWJhMjUwODQiLCJnaXZlbl9uYW1lIjoiYWxhemFyIiwiZmFtaWx5X25hbWUiOiJBeWVsZSIsImp0aSI6IjYxOTFkZTY0LTNiYmItNDM4Zi1iNjdlLTQ3ZTFjMDNiZWM3MyIsImV4cCI6MTY5NTYzNjA3MywiaXNzIjoiY2xlYW5hcmNoaXRlY3R1cmUiLCJhdWQiOiJjbGVhbmFyY2hpdGVjdHVyZSJ9.4B0VrTjhSrepyKvkH0v8DsbrbCOrfXQOT2saZC9ntaY
 

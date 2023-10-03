@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O8Khy2LY2q6FpfDgvBhKpoHil9iys+xIibWzJnkaQ+8Ujhnt7i77P9qFs+bR3ZCZP1XqvJMGqZr64N39ULunLQ==",
+  "dgSpecHash": "6rmJBKeZXrWTsqTUPykdeP2w9+TqqvHcrXwRf8vYUrjDad7d5nNn2hOxaIyFDW2vtzp946Qgighs7TMlGsyulw==",
   "success": true,
-  "projectFilePath": "c:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry\\cleanarchitecture.Application\\cleanarchitecture.Application.csproj",
+  "projectFilePath": "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry\\cleanarchitecture.Application\\cleanarchitecture.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\A\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512",
     "C:\\Users\\A\\.nuget\\packages\\fluentvalidation\\11.7.1\\fluentvalidation.11.7.1.nupkg.sha512",
