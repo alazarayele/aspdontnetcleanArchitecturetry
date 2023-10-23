@@ -1,4 +1,4 @@
-using cleanarchitecture.Infrastructure.Persistence;
+ using cleanarchitecture.Infrastructure.Persistence;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Configuration;
 
@@ -8,12 +8,19 @@ public static class InfrastructureReg
 {
     public static IServiceCollection AddInfrastructure(this IServiceCollection iservice,ConfigurationManager configuration)
     {
-        iservice.AddAuth(configuration);
+        iservice.AddAuth(configuration).AddPersistance();
    iservice.AddSingleton<IDateTimeProvider,DateTimeProvider>();
-        iservice.AddSingleton<IUserRepository,UserRepository>();
-        return iservice;   
+           return iservice;   
     }
 
+ public static IServiceCollection AddPersistance(
+        this IServiceCollection iservice )
+    {
+        iservice.AddSingleton<IUserRepository,UserRepository>();
+        iservice.AddSingleton<IMenuRepository,MenuRepository>();
+        return iservice;
+    }
+      
     public static IServiceCollection AddAuth(
         this IServiceCollection iservice,
         ConfigurationManager configuration

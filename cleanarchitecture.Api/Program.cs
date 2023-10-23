@@ -10,7 +10,13 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 //builder.Services.AddControllers(options => options.Filters.Add<ErrorHandlingFilterAttribute>());
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddJsonOptions(
+    configure =>
+    {
+        configure.JsonSerializerOptions.AllowTrailingCommas = true;
+        
+    }
+);
 
 builder.Services.AddSingleton<ProblemDetailsFactory, cleanarchitectureProblemDetailsFactory>();
 //builder.Services.AddApplicationRegistraion();
