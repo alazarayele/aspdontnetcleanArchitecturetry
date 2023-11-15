@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry\\cleanarchitecture.Infrastructure\\cleanarchitecture.Infrastructure.csproj": {}
+    "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry\\Cleanarchitecture.Infrastructure\\cleanarchitecture.Infrastructure.csproj": {}
   },
   "projects": {
     "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry\\cleanarchitecture.Application\\cleanarchitecture.Application.csproj": {
@@ -146,14 +146,14 @@
         }
       }
     },
-    "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry\\cleanarchitecture.Infrastructure\\cleanarchitecture.Infrastructure.csproj": {
+    "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry\\Cleanarchitecture.Infrastructure\\cleanarchitecture.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry\\cleanarchitecture.Infrastructure\\cleanarchitecture.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry\\Cleanarchitecture.Infrastructure\\cleanarchitecture.Infrastructure.csproj",
         "projectName": "cleanarchitecture.Infrastructure",
-        "projectPath": "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry\\cleanarchitecture.Infrastructure\\cleanarchitecture.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry\\Cleanarchitecture.Infrastructure\\cleanarchitecture.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\A\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry\\cleanarchitecture.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\A\\Documents\\aspdontnetcleanArchitecturetry\\Cleanarchitecture.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\A\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -189,6 +189,14 @@
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[3.1.23, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.12, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",

@@ -16,22 +16,22 @@ public sealed class MenU : AggregateRoot<MenuId>
 
     private readonly List<MenuReviewId> _menuReviewIds = new();
 
-    public string Name { get; }
-    public string Description { get; }
+    public string Name { get; private set;}
+    public string Description { get; private set;}
 
-    public AverageRating AverageRating { get; }
+    public AverageRating AverageRating { get; private set;}
 
     public IReadOnlyList<MenuSection> sections => _sections.AsReadOnly();
 
-    public HostId HostId { get; }
+    public HostId HostId { get; private set; }
 
     public IReadOnlyList<DinnerId> DinnerIds => (IReadOnlyList<DinnerId>)_dinnerIds.AsReadOnly();
 
     public IReadOnlyList<MenuReviewId> MenuReviewIds => (IReadOnlyList<MenuReviewId>)_menuReviewIds.AsReadOnly();
 
-    public DateTime CreatedDateTime { get; }
+    public DateTime CreatedDateTime { get; private set;}
 
-    public DateTime UpdatedDateTime { get; }
+    public DateTime UpdatedDateTime { get; private set;}
 
     private MenU(MenuId menuId, string name, string description,
        HostId hostId, DateTime createdDateTime,
@@ -40,6 +40,7 @@ public sealed class MenU : AggregateRoot<MenuId>
         Name = name;
         Description = description;
         HostId = hostId;
+        _sections = sections;
         CreatedDateTime = createdDateTime;
         UpdatedDateTime = updatedDateTime;
     }
@@ -52,8 +53,16 @@ public sealed class MenU : AggregateRoot<MenuId>
     )
     {
         return new(
-            MenuId.createUnique(), name, description, hostId, DateTime.UtcNow,
+            MenuId.createUnique(),
+             name, description, 
+             hostId, 
+             sections ?? new(),
+             DateTime.UtcNow,
             DateTime.UtcNow
         );
+
+         
     }
+
+    
 }

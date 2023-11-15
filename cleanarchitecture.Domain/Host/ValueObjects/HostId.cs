@@ -13,8 +13,10 @@ public sealed class HostId : Valueobject
         Value = value;
     }
 
-    public static HostId Create(HostId hostId) 
+    public static HostId Create(HostId value) 
     {
+
+        
         return new(Guid.NewGuid());
     }
     public override IEnumerable<object> GetEqualityComponent()

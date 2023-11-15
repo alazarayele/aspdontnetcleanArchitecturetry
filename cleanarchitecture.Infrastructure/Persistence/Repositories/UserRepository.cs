@@ -1,6 +1,6 @@
 using cleanarchitecture.Domain;
 
-namespace cleanarchitecture.Infrastructure.Persistence;
+namespace cleanarchitecture.Infrastructure.Persistence.Repositories;
 
 public class UserRepository : IUserRepository
 {

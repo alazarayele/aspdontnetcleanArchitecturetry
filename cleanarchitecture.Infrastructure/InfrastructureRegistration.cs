@@ -1,5 +1,7 @@
  using cleanarchitecture.Infrastructure.Persistence;
+using cleanarchitecture.Infrastructure.Persistence.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
 namespace cleanarchitecture.Infrastructure;
@@ -15,7 +17,9 @@ public static class InfrastructureReg
 
  public static IServiceCollection AddPersistance(
         this IServiceCollection iservice )
-    {
+    {   
+        iservice.AddDbContext<CleanArchitectureDbContext>(options =>
+        options.UseSqlServer("Server = localhost;Database =cleanarchitectureUser Id =SA;password = alazar123;TrustServerCertificatetrue"));
         iservice.AddSingleton<IUserRepository,UserRepository>();
         iservice.AddSingleton<IMenuRepository,MenuRepository>();
         return iservice;
@@ -26,7 +30,7 @@ public static class InfrastructureReg
         ConfigurationManager configuration
     )
     {
-        var JwtSettings = new JwtSettings();
+        var JwtSettings  = new JwtSettings();
         configuration.Bind(JwtSettings.SectionName,JwtSettings);
         iservice.AddSingleton(Options.Create(JwtSettings));
         iservice.AddSingleton<IJwtTokenGenerator,JwtTokenGenerator>();
